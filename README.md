@@ -9,7 +9,7 @@ mvn clean package
 # 2. Build Docker
 Build the API as Docker container
 ```
-call docker build -t springbootmetrics-image -f SpringBootMetrics/Dockerfile SpringBootMetrics
+docker build -t springbootmetrics-image -f SpringBootMetrics/Dockerfile SpringBootMetrics
 ```
 # Running as Docker Container with docker-compose
 ```
