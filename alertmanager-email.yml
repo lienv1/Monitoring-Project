@@ -1,0 +1,15 @@
+global:
+  resolve_timeout: 3m
+
+route:
+  receiver: 'email-notifications'
+
+receivers:
+- name: 'email-notifications'
+  email_configs:
+  - to: '***'
+    from: '***'
+    smarthost: '***'
+    auth_username: '***'
+    auth_password: '***'
+    require_tls: false

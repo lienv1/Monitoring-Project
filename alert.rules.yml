@@ -1,0 +1,10 @@
+groups:
+  - name: example
+    rules:
+      - alert: HighErrorRate
+        expr: bugs_open > 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: Number of open bugs is greater than 0
