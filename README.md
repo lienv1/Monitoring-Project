@@ -1,5 +1,8 @@
 # Monitoring-Project
 This project uses Spring Boot to simulate metrics, Prometheus for data collection, and Grafana for visualization. It includes an Alertmanager setup that notifies Slack when certain thresholds are exceeded.
+
+![Diagram](https://raw.githubusercontent.com/lienv1/Monitoring-Project/main/Diagram.png?raw=true)
+
 # Configuration
 You can either use Slack or Email for notification
 
