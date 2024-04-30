@@ -1,16 +1,21 @@
 # Monitoring-Project
-Simple project that uses Spring Boot to simulate metrics, Prometheus as data acquisition and Grafana to visualize the data.
-# Build Spring Boot API
-For testing purpose, you don't need to build the project. Just use the default jar file.
-To build the Spring Boot API, use Maven
-```
-mvn clean package
-```
+This project uses Spring Boot to simulate metrics, Prometheus for data collection, and Grafana for visualization. It includes an Alertmanager setup that notifies Slack when certain thresholds are exceeded.
+# Configuration
+You can either use Slack or Email for notification
+
+1. **Slack Notifications**:
+Edit the slack_url file and insert your Slack webhook URL.
+
+2. **Email Notifications**:
+Use alertmanager-email.yml instead of alertmanager.yml to configure email notifications.
+
+Choose the method that best fits your notification needs.
+
 # Running as Docker Container with docker-compose
 ```
 docker-compose -p monitor-project up -d
 ```
-Grafana runs on http://localhost:3000 and Prometheus on http://localhost:9090
+Grafana, Prometheus, and Alertmanager are accessible at http://localhost:3000, http://localhost:9090, and http://localhost:9093 respectively.
 
 Use the requests in the api documentation to simulate the metrics.
 
