@@ -7,7 +7,7 @@ This project uses Spring Boot to simulate metrics, Prometheus for data collectio
 You can either use Slack or Email for notification
 
 1. **Slack Notifications**:
-Edit the slack_url file and insert your Slack webhook URL.
+Edit the slack_url file and insert your Slack [webhook](https://api.slack.com/messaging/webhooks) URL.
 
 2. **Email Notifications**:
 Use alertmanager-email.yml instead of alertmanager.yml to configure email notifications.
